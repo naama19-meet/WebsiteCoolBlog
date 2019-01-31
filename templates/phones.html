@@ -1,0 +1,38 @@
+{% extends "navbar.html" %}
+
+        {% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+        {% endblock %}
+        {% block body %}
+<body style="background-repeat: repeat">
+        <div >
+            <br>
+            <br>
+            <div class="col-md-6" style="left:25%; ">
+                <div >
+
+                     <h1 class="whit font-weight-bold mov " style="color:#99ceff; left:5px" >~ Posts ~</h1>
+                    <br>
+                    <br>
+
+                        {% for i in phones%}
+                        <h1 class="whit" style="color:#b3daff;" >{{i.title}}</h1>
+            
+                        <p class="whit" > story: {{i.description}}</p>
+                
+                        <p class="whit" >aouther: <a class="whit" href = "/profile/{{i.username}}">{{i.username}}</a></p>
+                        <br>
+                        <br>
+                        <br>
+
+            {% endfor %}
+            </div>
+            <br>
+        {% endblock %}
+                 </div>
+       </div>
+<div>
+    <p>                                       </p>
+</div>
+</body>
+</body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	
+        <title>My Final Project</title>
+
+        <!-- Required tags to make the website responsive-->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- Add Bootstrap CSS to the page -->
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+     	
+
+		
+    </head>
+    <body class="bg">
+
+    	<div class="writingcolor">
+			<br>
+			<br>
+			<div style="height:10%;">
+				<div style="margin-left: 30%; width: 40%; margin-right: 10%; ">
+					<h1 class="font-weight-bold whit" style="color:#99ceff;">welcome to BlogCool       </h1>
+					<br>
+					<br>
+				</div>
+
+			</div>
+			<div style="height:45%;">
+				<div style="margin-left: 15%; width: 60%; margin-right: 30%; ">
+					<p> this is a  blog for student around the world where everybody could share the things they experience  in school for better or worse- and than different student could see how school around the world conducts and take inspiration to do it in their schools ;)</p>
+
+					<br>
+					<br>
+			    </div>
+			</div>
+			<br>
+
+        </div>
+		<br>
+	<div  >
+    	<div class="logininfo" class="container-fluid" style="height:30%; right:650px;" >
+			<div >
+				<h1 class="font-weight-bold mov"  style="color:#99ceff; left:40px"> LOGIN</h1>
+
+			</div >
+
+       		<form  class="btn btn-link" id = "sign_up_link" method = "post"> 
+      
+				<input type="text" name="name" placeholder="enter full name">
+				<br>
+				<input  type="password" name="password" placeholder="enter password">
+				<br>
+				<br>
+				<button class="btn btn-info" type="submit" value="submit"  >LOGIN </button>
+					<a href="/signup" class="btn btn-info"> sign up</a>
+	        </form>
+	       
+        </div>
+	</div>
+
+
+
+        <!-- Add JQuery and Bootstrap JS to the page -->
+       <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
+       <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+       <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+
+
+    </body>
+    
+</html>
